@@ -18,7 +18,7 @@ class Author:
 
     @property
     def name(self):
-        return self._name  # read-only
+        return self._name  
 
     def articles(self):
         arts = [article for article in Article.all if article.author == self]
